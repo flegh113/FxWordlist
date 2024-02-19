@@ -1,8 +1,4 @@
-##############################################################
-#                                                            #
-#  Hi, here is the documentation of the FxWordlist project.  #
-#                                                            #
-##############################################################
+#  Hi, here is the documentation of the FxWordlist project.
 
 !! This tool will be infinitely more efficient if you really know how to use it. !!
 !! You really have to adapt your configuration to the amount of information you have. !!
