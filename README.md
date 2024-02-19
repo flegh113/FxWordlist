@@ -1,39 +1,38 @@
-#  Hi, here is the documentation of the FxWordlist project.
+# FxWordlist Project Documentation
 
-!! This tool will be infinitely more efficient if you really know how to use it. !!
-!! You really have to adapt your configuration to the amount of information you have. !!
+**Note:** The tool's efficiency is greatly enhanced when used proficiently. Adapt your configuration based on available information.
 
-To use this program correctly, please do this :
+## Getting Started
 
-You have two options :
+To use this program effectively, follow these steps:
 
-1. Write down all the information you have about the target in a .txt file (firstname, lastname, date of birth, ...).
+1. Write down all target information in a .txt file (firstname, lastname, date of birth, etc.). One piece of information per line.
 
-!! Don't forget that it's one information per line maximum !!
+    Example in "informations.txt":
+    ```
+    Alice
+    Bob
+    1990
+    [...]
+    ```
 
-Here's an example:
-In "informations.txt" file :
-Alice
-Bob
-1990
-[...]
+    OR
 
-OR
+2. Use the -i command for interactive questions without a file.
 
-2. You can enter the -i command to have the program ask you the questions directly without passing the file containing the information.
+    ```bash
+    python main.py -i [options, e.g., -m soft]
+    ```
 
-python main.py -i [and option if u want, like -m soft]
+## Usage
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Don't forget to specify your "informations_file.txt" or use the -i command in your command line.
 
-Now you can use the program.
-Don't forget to specify your "[informations_file.txt]" file or the -i command when you type a command.
-You can position them anywhere in your order :
-1 : python main.py informations.txt -m soft
-2 : python main.py -m soft informations.txt
-Or
-3 : python main.py -i -m soft
-4 : python main.py -m soft -i
+Examples:
+1. `python main.py informations.txt -m soft`
+2. `python main.py -m soft informations.txt`
+3. `python main.py -i -m soft`
+4. `python main.py -m soft -i`
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
