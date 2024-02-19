@@ -39,7 +39,7 @@ Examples:
 This tool contains 4 modes for easy configuration:
 -m, --mode {soft;optimized;advanced;deep} || Choose the generation mode.
 
-- SOFT
+- **_SOFT_**
 command: python main.py informations.txt -m soft
 
 1.Description :
@@ -50,7 +50,7 @@ command: python main.py informations.txt -m soft
 
 ---------------------------------------------------------------------------------------------------------
 
-- OPTIMIZED (default mode)
+- **_OPTIMIZED_** (default mode)
 command: python main.py informations.txt (no need to specify mode, it's already the default if there's no option)
 
 1.Description :
@@ -61,24 +61,25 @@ command: python main.py informations.txt (no need to specify mode, it's already 
 
 ---------------------------------------------------------------------------------------------------------
 
-- ADVANCED
+- **_ADVANCED_**
+  
 command: python main.py informations.txt -m advanced
 
-1.Description :
+1. Description :
 >> This mode pushes generation further by implementing additional functions and increasing generation parameters, thus creating larger wordlists.
 
-2.Why use this mode ?
+2. Why use this mode ?
 >> If you really want to increase your chances of finding a password without worrying about its size, this may be the mode for you.
 
 ---------------------------------------------------------------------------------------------------------
 
-- DEEP
-command: python main.py informations.txt -m deep
+- **_DEEP_**
+--> python main.py informations.txt -m deep
 
-1.Description :
+1. Description :
 >> This mode is very heavy, it will test a very large number of possibilities, which can easily make the wordlist absolutely enormous.
 
-2.Why use this mode?
+2. Why use this mode?
 >> This mode should only be used if you have very little information about a person. That's why maximum rules have been included in its programming.
 Beyond 3-4 pieces of information, it will generate so many passwords that it won't necessarily be useful (this also depends on the size of each piece of information).
 However, if you don't have much information, it can be very useful for testing countless combinations.
