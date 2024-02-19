@@ -1,4 +1,4 @@
-# FxWordlist Project Documentation
+# FxWordlist Project - *Powerful Wordlist Generator.*
 
 **Note:** The tool's efficiency is greatly enhanced when used proficiently. Adapt your configuration based on available information.
 
