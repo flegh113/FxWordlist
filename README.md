@@ -43,10 +43,10 @@ Examples:
 - **_SOFT_**
 command: python main.py informations.txt -m soft
 
-1.Description :
+1. Description :
 >> Soft mode is used to generate small password lists. As a result, most of the program's functions will be toned down, allowing you to do less work.
 
-2.Why use this mode ?
+2. Why use this mode ?
 >> This mode doesn't involve any great complexity of passwords, which means it can be used as a basis for breaking a password that isn't very complex/robust.
 
 ---------------------------------------------------------------------------------------------------------
@@ -55,10 +55,10 @@ command: python main.py informations.txt -m soft
 
 `command: python main.py informations.txt (no need to specify mode, it's already the default if there's no option)`
 
-1.Description :
+1. Description :
 >> Optimized mode is the default mode. It aims to generate password lists that optimize both quantity and quality. As a result, most of the program's features are probabilistically designed to retain only the most likely passwords. 
 
-2.Why use this mode ?
+2. Why use this mode ?
 >> This mode is widely preferred because it facilitates the creation of password lists that are not excessively voluminous, while focusing as much as possible on the probability of the passwords' existence.
 
 ---------------------------------------------------------------------------------------------------------
@@ -90,20 +90,28 @@ However, if you don't have much information, it can be very useful for testing c
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # CONFIGURATION
-This tool is fully configurable, so you can create very specific word lists depending on what you want, using the various options available.
-You can also specify a mode and modify one or more of its values ​​with commands, example: -m soft -p3 -a1 -s0 (0 disables) ...
 
-If you input any of these commands without specifying a mode, all other options will be automatically disabled, ensuring the execution aligns precisely with your intent.
-You can, of course, combine them as needed :
-example with all commands --> main.py informations.txt -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge 0_2050.txt -o my_custom_wordlist.txt
+This tool is highly flexible, allowing you to tailor word lists to your specific needs using a variety of available options. You can also specify a mode and modify one or more of its values with commands, for example: `-m soft -p3 -a1 -s0` (0 disables)...
 
+When you input any of these commands without specifying a mode, all other options will be automatically disabled, ensuring precise execution aligned with your intent. Feel free to combine them as needed:
 
--m, --mode {soft;optimized;advanced;deep}                      ||   Choose the generation mode.
-Exemple : python main.py informations.txt -m advanced
+For instance, using all commands:
+```bash
+main.py informations.txt -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge 0_2050.txt -o my_custom_wordlist.txt
+```
+## Available Options:
 
--p, --permutation [number_of_max_permutation]         ||   Number of maximum combinations for information permutations.
-exemple : main.py informations.txt -p 3
+### _Choose the generation mode._
 
+=> `-m, --mode {soft;optimized;advanced;deep}`
+```bash
+>> python main.py informations.txt -m advanced
+```
+### _Number of maximum combinations for information permutations._
+>> `-p, --permutation [number_of_max_permutation]`
+```bash
+python main.py informations.txt -p 3
+```
 
 -s, --symbol [number_of_maximum_symbol]            ||   Number of replacements with symbols, exemple: @lice = Alic€, @lic€, ... (testing all combinations).
 exemple : main.py informations.txt -s 3
