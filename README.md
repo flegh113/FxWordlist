@@ -97,7 +97,7 @@ When you input any of these commands without specifying a mode, all other option
 
 For instance, using all commands:
 ```bash
-main.py informations.txt -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge 0_2050.txt -o my_custom_wordlist.txt
+main.py informations.txt -m soft -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge 0_2050.txt -o my_custom_wordlist.txt
 ```
 ## Available Options:
 
