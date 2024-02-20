@@ -101,33 +101,56 @@ main.py informations.txt -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge
 ```
 ## Available Options:
 
-### _Choose the generation mode._
+### - _Choose the generation mode._
 
-=> `-m, --mode {soft;optimized;advanced;deep}`
+>> `-m, --mode {soft;optimized;advanced;deep}`
 ```bash
 >> python main.py informations.txt -m advanced
 ```
-### _Number of maximum combinations for information permutations._
+---
+
+### - _Number of maximum combinations for information permutations._
 >> `-p, --permutation [number_of_max_permutation]`
 ```bash
-python main.py informations.txt -p 3
+>> python main.py informations.txt -p 3
 ```
+---
 
--s, --symbol [number_of_maximum_symbol]            ||   Number of replacements with symbols, exemple: @lice = Alic€, @lic€, ... (testing all combinations).
-exemple : main.py informations.txt -s 3
+### - _Number of replacements with symbols, ex: @lice = Alic€, @lic€_
+>> `-s, --symbol [number_of_maximum_symbol]`
+```bash
+>> python main.py informations.txt -s 3
+```
+---
+
+### - _Number of replacements with digit, ex: Alice = 4lice, Al1c3_
+>> `-d, --digit [number_of_maximum_digit]`
+```bash
+>> python main.py informations.txt -d 3
+```
+---
 
 
--d, --digit [number_of_maximum_digit]              ||   Number of replacements with digit, exemple: Alice = 4lice, Al1ce, ... (testing all combinations).
-exemple : main.py informations.txt -d 3
+### - _Enable/Disable (Y/N) the function to uppercase the first letter only._
+>> `-f, --firstupper [Yes;No] `
+```bash
+>> python main.py informations.txt -f Y/N
+```
+---
 
+### - _Enable/Disable (Y/N) the function to lowercase the entire password._
+>> `-l, --lowercase [Yes;No]`
+```bash
+>> python main.py informations.txt -l Y/N
+```
+---
 
--f, --firstupper [Yes;No]                          ||   Enable/Disable (Y/N) the function to uppercase the first letter only.
-exemple : main.py informations.txt -f
-
-
--l, --lowercase [Yes;No]                           ||   Enable/Disable (Y/N) the function to lowercase the entire password.
-exemple : main.py informations.txt -l
-
+### - _Enable/Disable (Y/N) the function to lowercase the entire password._
+>> `-l, --lowercase [Yes;No]`
+```bash
+>> python main.py informations.txt -l Y/N
+```
+---
 
 -a, --allupper [number_of_maximum_uppercase]       ||   Number of replacements with uppercase letters (testing all combinations).
 exemple : main.py informations.txt -a 2
