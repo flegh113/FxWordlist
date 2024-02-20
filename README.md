@@ -1,5 +1,7 @@
 # FxWordlist Project - *Powerful Wordlist Generator.*
 
+#### _A practical wordlist generator designed for password cracking, leveraging target-specific information._
+
 **Note:** The effectiveness of the tool is greatly improved when used competently. Adapt your configuration according to the amount of information on the target.
 
 ## Getting Started
