@@ -41,7 +41,8 @@ Examples:
 `-m, --mode {soft;optimized;advanced;deep} || Choose the generation mode.`
 
 - **_SOFT_**
-command: python main.py informations.txt -m soft
+  
+`python main.py informations.txt -m soft`
 
 1. Description :
 >> Soft mode is used to generate small password lists. As a result, most of the program's functions will be toned down, allowing you to do less work.
@@ -53,7 +54,7 @@ command: python main.py informations.txt -m soft
 
 - **_OPTIMIZED_** (default mode)
 
-`command: python main.py -m optimized informations.txt (if no options are used, the default mode will be automatically activated.)`
+`python main.py -m optimized informations.txt (if no options are used, the default mode will be automatically activated.)`
 
 1. Description :
 >> Optimized mode is the default mode. It aims to generate password lists that optimize both quantity and quality. As a result, most of the program's features are probabilistically designed to retain only the most likely passwords. 
@@ -65,7 +66,7 @@ command: python main.py informations.txt -m soft
 
 - **_ADVANCED_**
   
-`command: python main.py informations.txt -m advanced`
+`python main.py informations.txt -m advanced`
 
 1. Description :
 >> This mode pushes generation further by implementing additional functions and increasing generation parameters, thus creating larger wordlists.
@@ -77,7 +78,7 @@ command: python main.py informations.txt -m soft
 
 - **_DEEP_**
   
-`command: python main.py informations.txt -m deep`
+`python main.py informations.txt -m deep`
 
 1. Description :
 >> This mode is very heavy, it will test a very large number of possibilities, which can easily make the wordlist absolutely enormous.
