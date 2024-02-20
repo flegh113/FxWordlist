@@ -262,14 +262,14 @@ This wordlist is simply a list of numbers from 0 to 2050. It can potentially hel
     python main.py information.txt -c0 -b0 a3...
     ```
     
----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 ## Futur Updates :
 Upcoming features will allow you to create custom modes, eliminating the need to re-enter your entire configuration.
 
 Additionally, new rules will be introduced to refine the generation of even more probable passwords. 
 
----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 >> #### Note: Always consider ethical and legal aspects when creating and using password lists.
 
 Flegh.
