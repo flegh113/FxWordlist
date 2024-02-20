@@ -21,7 +21,7 @@ To use this program effectively, follow these steps:
 2. Use the -i command for interactive questions without a file.
 
     ```bash
-    python main.py -i [options, e.g., -m soft]
+    python main.py -i [options]
     ```
 
 ## Usage
