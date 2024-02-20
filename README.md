@@ -34,7 +34,7 @@ Examples:
 3. `python main.py -i -m soft`
 4. `python main.py -m soft -i`
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
 ## This tool contains 4 modes for easy configuration:
 
@@ -87,7 +87,7 @@ command: python main.py informations.txt -m soft
 Beyond 3-4 pieces of information, it will generate so many passwords that it won't necessarily be useful (this also depends on the size of each piece of information).
 However, if you don't have much information, it can be very useful for testing countless combinations.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 
 # CONFIGURATION
 
@@ -130,64 +130,80 @@ main.py informations.txt -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge
 ```
 ---
 
-
 ### - _Enable/Disable (Y/N) the function to uppercase the first letter only._
 >> `-f, --firstupper [Yes;No] `
 ```bash
->> python main.py informations.txt -f Y/N
+>> python main.py informations.txt -f Y
 ```
 ---
 
 ### - _Enable/Disable (Y/N) the function to lowercase the entire password._
 >> `-l, --lowercase [Yes;No]`
 ```bash
->> python main.py informations.txt -l Y/N
+>> python main.py informations.txt -l Y
 ```
 ---
 
-### - _Enable/Disable (Y/N) the function to lowercase the entire password._
->> `-l, --lowercase [Yes;No]`
+### - _ Enable/Disable (Y/N) the function to double the last letter if it is a vowel, ex: Mia = Miaa._
+>> `-b, --double_letter [Yes;No]`
 ```bash
->> python main.py informations.txt -l Y/N
+>> python main.py informations.txt -b Y
 ```
 ---
 
--a, --allupper [number_of_maximum_uppercase]       ||   Number of replacements with uppercase letters (testing all combinations).
-exemple : main.py informations.txt -a 2
+### - _Number of replacements with uppercase letters (testing all combinations)._
+>> `-a, --allupper [number_of_maximum_uppercase]`
+```bash
+>> python main.py informations.txt -a 2
+```
+---
 
 
--b, --double_letter [Yes;No]                       ||    Enable/Disable (Y/N) the function to double the last letter if it is a vowel, ex: Mia = Miaa.
+### - _This feature introduces additional characters at each level, expanding the range of possibilities._
+>> `-c, --character {1,2,3,0}`
+- `Level 1 include ["1", "123", "0", "."]`
+- `Level 2 includes ["1", "123", "0", ".", "!", "*"]`
+- `Level 3 includes ["1", "123", "0", ".", "!", "*", "00","2000"]`
+- `Level 0 simply deactivates the functionality.`
+```bash
+>> python main.py informations.txt -c 1
+```
+---
 
+### - _Add one or more additional wordlists that we will add to our generation (put a ',' to separate if there are several)._
+>> `-w, --wordlist [wordlist_file,wordlist_file2,...]`
+```bash
+>> python main.py informations.txt -w digit_passwords.txt
+```
+---
 
--c, --character {1,2,3,0}                          ||   This feature introduces additional characters at each level, expanding the range of possibilities.
-exemple : main.py informations.txt -c                               - Level 1 include ["1", "123", "0", "."]
-                                                                    - Level 2 includes ["1", "123", "0", ".", "!", "*"]
-                                                                    - Level 3 includes ["1", "123", "0", ".", "!", "*", "00","2000"]
-				                                    --> The 0 simply deactivates the functionality.
+### - _Set all values to the same chosen value and enable all functions (except -w, --merge)._
+>> `--all_option [number_of_maximum_for_all_value]`
+```bash
+>> python main.py informations.txt --all_option 2
+```
+---
 
+### - _The path for the output file wordlist, by default the output file will be located in the directory where you started the program._
+>> `-o, --output_file [output_file_path] | default='./FxWordlist.txt'`
+```bash
+>> python main.py informations.txt -m soft -o my_file.txt
+```
+---
 
--w, --wordlist [wordlist_file,wordlist_file2,...]              ||   Add one or more additional wordlists that we will add to our generation (put a ',' to separate if there are several).
-exemple : main.py informations.txt -w digit_passwords.txt
+### - _Merge one or more extra word lists with our generated content from user information, creating multiple combinations between files (put a ',' to separate if there are several)._
+>> `--merge [file_to_merge,file_to_merge2,...]`
+```bash
+>> python main.py informations.txt --merge digit_passwords.txt
+```
+---
 
-
---all_option [number_of_maximum_for_all_value]                 ||   Set all values to the same chosen value and enable all functions (except -w, --merge)
-exemple : main.py informations.txt --all_option 2
-
-
--o, --output_file [output_file_path]                           ||   default='FxWordlist.txt', The path for the output file wordlist,
-                                                                    by default the output file will be located in the directory where you started the program.
-exemple : main.py informations.txt -m soft -o my_file.txt
-
-
---merge [file_to_merge,file_to_merge2,...]                     ||    Merge one or more extra word lists with our generated content from user information, creating multiple combinations between files
-						    		     (put a ',' to separate if there are several).
-exemple : main.py informations.txt --merge digit_passwords.txt
-
-
---ext_merge [file1.txt,file2.txt,file3.txt...]                 ||    Merge various external wordlists while excluding the use of target information, creating multiple combinations between files										     (put a ',' to separate if there are several).
-
-exemple : main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
-
+### - _ Merge various external wordlists while excluding the use of target information, creating multiple combinations between files (put a ',' to separate if there are several)._
+>> `--ext_merge [file1.txt,file2.txt,file3.txt...]  `
+```bash
+>> python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
+```
+---
 
 ############################################################################################################################################
 #                                                                                                                                          #                 
