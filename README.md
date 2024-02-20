@@ -217,12 +217,15 @@ python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
   - In cases of minimal information, consider experimenting with the `--merge` option using various wordlists.
     This approach can prove beneficial in diversifying password combinations by incorporating external sources.
     The program provides 2 wordlists which can be very useful for the merge (digit_passwords.txt & 0_2050.txt).
+    
     ```bash
     python main.py informations.txt --merge digit_passwords.txt
     ```
+    
   - If you use the "--merge" option or "-m deep", the number of passwords may increase significantly.
     To mitigate this impact, this impact you can disable features like `--character`, `--double_letter`, reducing
     the value of `--all_upper`, etc.
+    
     ```bash
     python main.py information.txt -c0 -b0 a3...
     ```
