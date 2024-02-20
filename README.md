@@ -54,7 +54,8 @@ Examples:
 
 ### - _OPTIMIZED_ (default mode)
 
-`python main.py -m optimized informations.txt (if no options are used, the default mode will be automatically activated.)`
+`python main.py -m optimized informations.txt`
+###### >> (if no options are used, the default mode will be automatically activated).
 
 1. Description :
 >> Optimized mode is the default mode. It aims to generate password lists that optimize both quantity and quality. As a result, most of the program's features are probabilistically designed to retain only the most likely passwords. 
