@@ -36,7 +36,7 @@ Examples:
 3. `python main.py -i -m soft`
 4. `python main.py -m soft -i`
 
----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 ## This tool contains 4 modes for easy configuration:
 
@@ -52,7 +52,7 @@ Examples:
 2. Why use this mode ?
 >> This mode doesn't involve any great complexity of passwords, which means it can be used as a basis for breaking a password that isn't very complex/robust.
 
----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 ### - _OPTIMIZED_ (default mode)
 
@@ -65,7 +65,7 @@ Examples:
 2. Why use this mode ?
 >> This mode is widely preferred because it facilitates the creation of password lists that are not excessively voluminous, while focusing as much as possible on the probability of the passwords' existence.
 
----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 ### - _ADVANCED_
   
@@ -77,7 +77,7 @@ Examples:
 2. Why use this mode ?
 >> If you really want to increase your chances of finding a password without worrying about its size, this may be the mode for you.
 
----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 ### - _DEEP_
   
@@ -91,7 +91,7 @@ Examples:
 Beyond 3-4 pieces of information, it will generate so many passwords that it won't necessarily be useful (this also depends on the size of each piece of information).
 However, if you don't have much information, it can be very useful for testing countless combinations.
 
----------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
 
 # CONFIGURATION
 
