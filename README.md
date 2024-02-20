@@ -224,7 +224,7 @@ main.py informations.txt -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge
 ## Futur Updates :
 Future updates will introduce new features, including the ability to create custom modes without retyping the entire configuration.
 
-
-**Note: Always consider ethical and legal aspects when creating and using password lists.**
 ---------------------------------------------------------------------------------------------------------
-Flegh113.
+>> #### Note: Always consider ethical and legal aspects when creating and using password lists.
+
+Flegh.
