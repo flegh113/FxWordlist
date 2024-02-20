@@ -228,7 +228,7 @@ This wordlist consists of 460 passwords composed solely of numerical digits. It 
 ```
 
 ## 2 - _0_2050.txt_
-This wordlist is simply a list of numbers from 0 to 2050. It can potentially help find a password with information combined with a number or date, for example: Alice1990 / 1990Alice.
+This wordlist is simply a list of numbers from 0 to 2050. It can potentially help find a password with information combined with a number or date, for example: **Alice1990, 1990Alice.**
 ```bash
 0
 1
