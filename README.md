@@ -2,7 +2,11 @@
 
 #### _A practical wordlist generator designed for password cracking, leveraging target-specific information._
 
-**Note:** The effectiveness of the tool is greatly improved when used competently. Adapt your configuration according to the amount of information on the target.
+*Note:* The effectiveness of the tool is greatly improved when used competently. Adapt your configuration according to the amount of information on the target.
+
+<p align="center">
+  <img src="https://github.com/flegh113/FxWordlist/assets/159627784/4a61af67-e62e-4ed4-bbb8-8f3dcbfc8323" alt="FxWordlist Getting Started">
+</p>
 
 ## Getting Started
 
