@@ -144,7 +144,7 @@ python main.py informations.txt -l Y
 ```
 ---
 
-### - _ Enable/Disable (Y/N) the function to double the last letter if it is a vowel, ex: Mima = Mimaa._
+### - _Enable/Disable (Y/N) the function to double the last letter if it is a vowel, ex: Mima = Mimaa._
 >> `-b, --double_letter [Yes;No]`
 ```bash
 python main.py informations.txt -b Y
