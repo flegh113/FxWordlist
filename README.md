@@ -205,24 +205,20 @@ main.py informations.txt -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge
 ```
 ---
 
-############################################################################################################################################
-#                                                                                                                                          #                 
-#  IMPORTANT :                                                                                                                             #
-#                                                                                                                                          #
-#  - In cases of minimal information, consider experimenting with the "--merge" option using various wordlists.                            #
-#    This approach can prove beneficial in diversifying password combinations by incorporating external sources.                           #
-#    The program provides 2 wordlists which can be very useful for the merge (digit_passwords.txt & 0_2050.txt)                            #  
-#                                                                                                                                          #
-#  - If you use the "--merge" option or "-m deep", the number of passwords may increase significantly.                                     #
-#    To reduce this impact you can disable features like "character" and "double_letter" or reduce "all_upper":                            #
-#  --> python main.py information.txt -c0 -b0 ...                                                                                          #
-#                                                                                                                                          #
-############################################################################################################################################
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#  IMPORTANT :
+
+  - In cases of minimal information, consider experimenting with the '--merge' option using various wordlists.
+    This approach can prove beneficial in diversifying password combinations by incorporating external sources.
+    The program provides 2 wordlists which can be very useful for the merge (digit_passwords.txt & 0_2050.txt). 
+
+  - If you use the "--merge" option or "-m deep", the number of passwords may increase significantly.
+    To reduce this impact you can disable features like "character" and "double_letter" or reduce "all_upper":
+    'python main.py information.txt -c0 -b0 ...'
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Future updates will add several new features, such as the ability to create your own mode without having to retype your entire setup.
 Note: Always consider ethical and legal aspects when creating and using password lists.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Flegh113.
