@@ -375,5 +375,3 @@ f"""{Fore.LIGHTBLUE_EX}Permutations  : {Style.RESET_ALL}{combination_length}
         keyboard_interruption(color=True)
     except Exception as e:
         print(e)
-        
-#9

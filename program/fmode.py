@@ -39,5 +39,3 @@ def mode_config(passwords,mode,combination_length, nb_symbol, nb_digit, first_up
 
     return combination_length, nb_symbol, nb_digit, first_upper, nb_all_maj, lowercase, character, double_letter
 
-#9
-

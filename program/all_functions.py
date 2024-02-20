@@ -190,5 +190,3 @@ def save_passwords_to_file(passwords, filename):
     with open(filename, 'w') as file:
         for passwd in passwords:
             file.write(passwd + '\n')
-
-#9

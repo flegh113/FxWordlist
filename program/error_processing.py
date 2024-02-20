@@ -60,5 +60,3 @@ def verif_max_for_mode(passwords, mode):
         print(Fore.RED + f"[!] Error: Deep mode is heavy, your information(s) is too long for this mode (global_max_length:30)")
         print(Fore.RED + "[+] If you really want to continue with this informations you can use your own configuration (-h,--help).")
         exit(1)
-
-#9
