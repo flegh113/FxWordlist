@@ -191,7 +191,7 @@ python main.py informations.txt --all_option 2
 ---------------------------------------------------------------------
 
 ### - _The path for the output file wordlist, by default the output file will be located in the directory where you started the program._
->> `-o, --output_file [output_file_path] | default='./FxWordlist.txt'`
+>> `-o, --output_file [output_file_path] | default='./fw_output.txt'`
 ```bash
 python main.py informations.txt -m soft -o my_file.txt
 ```
