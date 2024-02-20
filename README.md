@@ -209,6 +209,9 @@ python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
 ```
 ---------------------------------------------------------------------
 
+Worlist 2
+
+---------------------------------------------------------------------
 
 #  IMPORTANT :
 
@@ -219,7 +222,7 @@ python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
     The program provides 2 wordlists which can be very useful for the merge (digit_passwords.txt & 0_2050.txt).
     
     ```bash
-    python main.py informations.txt --merge digit_passwords.txt
+    python main.py informations.txt --merge digit_passwords.txt,0_2050.txt
     ```
     
   - If you use the "--merge" option or "-m deep", the number of passwords may increase significantly.
