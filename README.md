@@ -40,7 +40,7 @@ Examples:
 
 `-m, --mode {soft;optimized;advanced;deep} || Choose the generation mode.`
 
-- **_SOFT_**
+### - _SOFT_
   
 `python main.py informations.txt -m soft`
 
@@ -52,7 +52,7 @@ Examples:
 
 ---------------------------------------------------------------------------------------------------------
 
-- **_OPTIMIZED_** (default mode)
+### - _OPTIMIZED_ (default mode)
 
 `python main.py -m optimized informations.txt (if no options are used, the default mode will be automatically activated.)`
 
@@ -64,7 +64,7 @@ Examples:
 
 ---------------------------------------------------------------------------------------------------------
 
-- **_ADVANCED_**
+### - _ADVANCED_
   
 `python main.py informations.txt -m advanced`
 
@@ -76,7 +76,7 @@ Examples:
 
 ---------------------------------------------------------------------------------------------------------
 
-- **_DEEP_**
+### - _DEEP_
   
 `python main.py informations.txt -m deep`
 
