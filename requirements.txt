@@ -1,2 +1,0 @@
-pip install colorama
-pip isntall tqdm
