@@ -174,7 +174,7 @@ python main.py informations.txt -c 1
 ```
 ---------------------------------------------------------------------
 
-### - _Add one or more additional wordlists that we will add to our generation (put a ',' to separate if there are several)._
+### - _Add one or more additional wordlists that we will add to our generation._
 >> `-w, --wordlist [wordlist_file,wordlist_file2,...]`
 ```bash
 python main.py informations.txt -w digit_passwords.txt
@@ -195,14 +195,14 @@ python main.py informations.txt -m soft -o my_file.txt
 ```
 ---------------------------------------------------------------------
 
-### - _Merge one or more extra word lists with our generated content from user information, creating multiple combinations between files (put a ',' to separate if there are several)._
+### - _Merge one or more extra word lists with our generated content from user information, creating multiple combinations between files._
 >> `--merge [file_to_merge,file_to_merge2,...]`
 ```bash
 python main.py informations.txt --merge digit_passwords.txt
 ```
 ---------------------------------------------------------------------
 
-### - _ Merge various external wordlists while excluding the use of target information, creating multiple combinations between files (put a ',' to separate if there are several)._
+### - _Merge various external wordlists while excluding the use of target information, creating multiple combinations between files._
 >> `--ext_merge [file1.txt,file2.txt,file3.txt...]  `
 ```bash
 python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
