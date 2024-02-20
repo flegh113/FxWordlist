@@ -48,13 +48,13 @@ if __name__ == "__main__":
                     arg_string = action.dest  # Utilisez le nom de l'argument comme texte
                     formatted_help = self._expand_help(action)
                     help_text = f"{Fore.RESET}{formatted_help}\n"
-                    return f"{Fore.CYAN}{arg_string.ljust(25)}{help_text}"
+                    return f"{Fore.LIGHTGREEN_EX}{arg_string.ljust(25)}{help_text}"
                 else:
                     # Optional argument
                     arg_string = ', '.join(action.option_strings)
                     formatted_help = self._expand_help(action)
                     help_text = f"{Fore.RESET}{formatted_help}\n"
-                    return f"{Fore.LIGHTCYAN_EX}{arg_string.ljust(25)}{help_text}\n"
+                    return f"{Fore.LIGHTGREEN_EX}{arg_string.ljust(25)}{help_text}\n"
 
 
         class MyArgumentParser(argparse.ArgumentParser):
@@ -72,8 +72,8 @@ if __name__ == "__main__":
                 raise argparse.ArgumentTypeError("The value must be Yes or No = 1 or 0 (capital letters are not required).")
 
         # Utilisez MyArgumentParser au lieu de argparse.ArgumentParser
-        parser = MyArgumentParser(formatter_class=MyHelpFormatter, description=Fore.LIGHTGREEN_EX + "Description : Powerful tool for generating a personal password list." + Style.RESET_ALL,
-                                epilog=Fore.LIGHTGREEN_EX + "Reading the documentation is highly recommended to use the program to its full potential.")
+        parser = MyArgumentParser(formatter_class=MyHelpFormatter, description=Fore.LIGHTYELLOW_EX + "Description : Powerful tool for generating a personal password list." + Style.RESET_ALL,
+                                epilog=Fore.LIGHTYELLOW_EX + "Reading the documentation is highly recommended to use the program to its full potential.")
 
         # Spécifier le chemin du fichier contenant les informations
         parser.add_argument("information_file", nargs="?", type=str, help="Path to the file containing target information.")
@@ -163,12 +163,12 @@ if __name__ == "__main__":
                                   "birthdate (MONTH)","birthdate (DAY)", "city of residence"]  # Ajoutez d'autres informations au besoin
             # Boucle pour demander chaque information à l'utilisateur
             for label in information_labels:
-                information = input(f"{Fore.LIGHTMAGENTA_EX}[?] Enter the target's {label}: {Style.RESET_ALL}").capitalize()
+                information = input(f"{Fore.LIGHTGREEN_EX}[?] Enter the target's {label}: {Style.RESET_ALL}").capitalize()
                 information = information.replace(" ","")
                 if information != "":
                     passwords.add(information)
             while True:
-                information = input(f"{Fore.LIGHTMAGENTA_EX}[?] Any other information (leave blank for none): {Style.RESET_ALL}").capitalize()
+                information = input(f"{Fore.LIGHTGREEN_EX}[?] Any other information (leave blank for none): {Style.RESET_ALL}").capitalize()
                 information = information.replace(" ","")
                 if information != "":
                     passwords.add(information)
@@ -355,7 +355,7 @@ f"""{Fore.LIGHTBLUE_EX}Permutations  : {Style.RESET_ALL}{combination_length}
             
 
         nb_passwd=len(passwords)
-        print(Fore.LIGHTCYAN_EX + f"[>] Wordlist currently being written...\n")
+        print(Fore.LIGHTGREEN_EX + f"[>] Wordlist currently being written...\n")
      
         # Enregistrer les mots de passe modifiés dans un fichier
         save_passwords_to_file(passwords, args.output_file) # le fichier de sortie (wordlist)
@@ -375,4 +375,5 @@ f"""{Fore.LIGHTBLUE_EX}Permutations  : {Style.RESET_ALL}{combination_length}
         keyboard_interruption(color=True)
     except Exception as e:
         print(e)
-    #     syntax_error()
+        
+#9

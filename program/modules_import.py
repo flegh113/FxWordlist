@@ -16,3 +16,4 @@ def check_installation(module_name):
         except:
             print(f"\n[!] Error: Installation of the '{module_name}' module failed.")
             exit(1)
+9

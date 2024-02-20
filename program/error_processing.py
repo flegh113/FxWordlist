@@ -44,19 +44,21 @@ def verif_nb_permutation(permutation, passwords, only_mode_activated):
 def verif_max_for_mode(passwords, mode):
     max_length = len(max(passwords, key=len))
     if max_length > 15:
-        print(Fore.LIGHTMAGENTA_EX + "Length of your informations =",max_length)
-        print(Fore.RED + f"\n[!] Error: {mode} mode is heavy, your information(s) is too long for this mode (max_length:15).")
+        print(Fore.RED + "[!] Length of your informations =",max_length)
+        print(Fore.RED + f"[!] Error: {mode} mode is heavy, your information(s) is too long for this mode (max_length:15).")
         print(Fore.RED + "[+] If you really want to continue with this informations you can use your own configuration (--help).")
         exit(1)
 
     total_length = sum(len(password) for password in passwords)
     if total_length > 40 and mode == "advanced":
-        print(Fore.CYAN + "[+] Global length of informations =",total_length)
+        print(Fore.RED + "[!] Global length of informations =",total_length)
         print(Fore.RED + f"[!] Error: Advanced mode is heavy, your information(s) is too long for this mode (global_max_length:40).")
-        print(Fore.CYAN + "[+] If you really want to continue with this informations you can use your own configuration (--help).")
+        print(Fore.RED + "[+] If you really want to continue with this informations you can use your own configuration (--help).")
         exit(1)
     if total_length > 30 and mode == "deep":
-        print(Fore.CYAN + "[+] Global length of informations =",total_length)
-        print(Fore.RED + f"\n[!] Error: Deep mode is heavy, your information(s) is too long for this mode (global_max_length:30)")
-        print(Fore.CYAN + "[+] --> If you really want to continue with this informations you can use your own configuration (-h,--help).")
+        print(Fore.RED + "[!] Global length of informations =",total_length)
+        print(Fore.RED + f"[!] Error: Deep mode is heavy, your information(s) is too long for this mode (global_max_length:30)")
+        print(Fore.RED + "[+] If you really want to continue with this informations you can use your own configuration (-h,--help).")
         exit(1)
+
+#9
