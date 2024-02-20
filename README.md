@@ -212,9 +212,9 @@ python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
 # Additional Testing Wordlists
 
 The program includes two compact built-in wordlists for specific testing purposes.
-This wordlist includes 460 passwords which are only with numbers. They can be added to your build or combined with the target information via --merge. This allows you to create additional probable combinations.
+*You can incorporate these wordlists into your generation using --wordlist or combine them with target information using --merge. This allows the creation of additional probable combinations.$
 
-1 - Digit_passwords.txt
+## 1 - _Digit_passwords.txt_
 This wordlist consists of 460 passwords composed solely of numerical digits. It represents probable passwords involving numeric sequences.
 ```bash
 123
@@ -225,6 +225,18 @@ This wordlist consists of 460 passwords composed solely of numerical digits. It 
 12345678
 123456789
 [...]
+```
+
+## 2 - _0_2050.txt_
+This wordlist is simply a list of numbers from 0 to 2050. It can potentially help find a password with information combined with a number or date, for example: Alice1990 / 1990Alice.
+```bash
+0
+1
+[...]
+1990
+1991
+[...]
+2050
 ```
 ---------------------------------------------------------------------
 
