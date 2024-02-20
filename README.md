@@ -144,7 +144,7 @@ python main.py informations.txt -l Y
 ```
 ---
 
-### - _ Enable/Disable (Y/N) the function to double the last letter if it is a vowel, ex: Mia = Miaa._
+### - _ Enable/Disable (Y/N) the function to double the last letter if it is a vowel, ex: Mima = Mimaa._
 >> `-b, --double_letter [Yes;No]`
 ```bash
 python main.py informations.txt -b Y
@@ -157,7 +157,6 @@ python main.py informations.txt -b Y
 python main.py informations.txt -a 2
 ```
 ---
-
 
 ### - _This feature introduces additional characters at each level, expanding the range of possibilities._
 >> `-c, --character {1,2,3,0}`
@@ -213,8 +212,8 @@ python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
     The program provides 2 wordlists which can be very useful for the merge (digit_passwords.txt & 0_2050.txt). 
 
   - If you use the "--merge" option or "-m deep", the number of passwords may increase significantly.
-    To mitigate this impact, this impact you can disable features like `--character`, `--double_letter` and reducing
-    the value of `--all_upper`:
+    To mitigate this impact, this impact you can disable features like `--character`, `--double_letter`, reducing
+    the value of `--all_upper`, etc.
     ```bash
     python main.py information.txt -c0 -b0 a3...
     ```
