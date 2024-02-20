@@ -7,7 +7,7 @@ if __name__ == "__main__":
         from modules_import import check_installation
         check_installation('tqdm')
         check_installation('colorama')
-        from script import (read_information_from_file, generate_permutation, generate_maj,
+        from all_functions import (read_information_from_file, generate_permutation, generate_maj,
         generate_lower, start_symbol_digit, add_char, save_passwords_to_file, start_all_upper,
         start_merge, start_ext_merge,add_double_letter)
         from error_processing import verif_path, verif_nb_permutation, keyboard_interruption, check_ext_merge
@@ -117,7 +117,7 @@ if __name__ == "__main__":
                             help="Add one or more additional wordlists that we will add to our generation\n"+" "*26+"(put a ',' to separate if there are several).")
         
         # Fichier de sortie
-        parser.add_argument("-o", "--output_file", type=str, default='FxWordlist.txt',
+        parser.add_argument("-o", "--output_file", type=str, default='fw_output.txt',
                             help = "The path for the output file wordlist,\n"+" "*26+"by default the output file will be located in the directory where you started the program." )
 
         # Fusionner la wordlist générée via les infos avec une wordlist externe
