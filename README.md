@@ -274,6 +274,10 @@ Upcoming features will allow you to create custom modes, eliminating the need to
 Additionally, new rules will be introduced to refine the generation of even more probable passwords. 
 
 ------------------------------------------------------------------------------------------------------
->> #### Note: Always consider ethical and legal aspects when creating and using password lists.
+## Want to contribute ?
 
-Flegh.
+**_If you have suggestions to enhance this project, feel free to share them in the [Issues](#link-to-issues) section._**
+
+##### Note: “ F0r EdUCaTi0n@L PUrp0$eS 0nLy ”
+
+>> Flegh.
