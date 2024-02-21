@@ -278,6 +278,8 @@ Additionally, new rules will be introduced to refine the generation of even more
 
 **_If you have suggestions to enhance this project, feel free to share them in the [Issues](#link-to-issues) section._**
 
-##### Note: “ F0r EdUCaTi0n@L PUrp0$eS 0nLy ”
+###### “ F0r EdUCaTi0n@L PUrp0$eS 0nLy ”
 
->> Flegh.
+------------------------------------------------------------------------------------------------------
+
+**Flegh.**
