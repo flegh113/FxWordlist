@@ -276,7 +276,7 @@ Additionally, new rules will be introduced to refine the generation of even more
 ------------------------------------------------------------------------------------------------------
 ## Want to contribute ?
 
-**_If you have suggestions to enhance this project, feel free to share them in the [Issues](#link-to-issues) section._**
+**_If you have suggestions to enhance this project, feel free to share them in the [Issues](#issues) section._**
 
 ###### “ F0r EdUCaTi0n@L PUrp0$eS 0nLy ”
 
