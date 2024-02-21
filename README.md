@@ -263,7 +263,7 @@ This wordlist is simply a list of numbers from 0 to 2050. It can potentially hel
     the value of `--all_upper`, etc.
     
     ```bash
-    python main.py information.txt -c0 -b0 a3...
+    python main.py information.txt --merge ./0_2050.txt -m optimized -c0 -b0 ...
     ```
     
 ------------------------------------------------------------------------------------------------------
