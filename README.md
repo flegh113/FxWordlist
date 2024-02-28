@@ -27,7 +27,7 @@ To use this program effectively, follow these steps:
 2. Use the -i command for interactive questions without a file.
 
     ```bash
-    python main.py -i [options]
+    python fxwordlist.py -i [options]
     ```
 
 ## Usage
@@ -35,10 +35,10 @@ To use this program effectively, follow these steps:
 Don't forget to specify your "informations_file.txt" or use the -i command in your command line.
 
 Examples:
-1. `python main.py informations.txt -m soft`
-2. `python main.py -m soft informations.txt`
-3. `python main.py -i -m soft`
-4. `python main.py -m soft -i`
+1. `python fxwordlist.py informations.txt -m soft`
+2. `python fxwordlist.py -m soft informations.txt`
+3. `python fxwordlist.py -i -m soft`
+4. `python fxwordlist.py -m soft -i`
 
 ------------------------------------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ Examples:
 
 ### - _SOFT_
   
-`python main.py informations.txt -m soft`
+`python fxwordlist.py informations.txt -m soft`
 
 1. Description :
 >> Soft mode is used to generate small password lists. As a result, most of the program's functions will be toned down, allowing you to do less work.
@@ -60,7 +60,7 @@ Examples:
 
 ### - _OPTIMIZED_ (default mode)
 
-`python main.py -m optimized informations.txt`
+`python fxwordlist.py -m optimized informations.txt`
 ###### >> (if no options are used, the default mode will be automatically activated).
 
 1. Description :
@@ -73,7 +73,7 @@ Examples:
 
 ### - _ADVANCED_
   
-`python main.py informations.txt -m advanced`
+`python fxwordlist.py informations.txt -m advanced`
 
 1. Description :
 >> This mode pushes generation further by implementing additional functions and increasing generation parameters, thus creating larger wordlists.
@@ -85,7 +85,7 @@ Examples:
 
 ### - _DEEP_
   
-`python main.py informations.txt -m deep`
+`python fxwordlist.py informations.txt -m deep`
 
 1. Description :
 >> This mode is very heavy, it will test a very large number of possibilities, which can easily make the wordlist absolutely enormous.
@@ -105,7 +105,7 @@ When you input any of these commands without specifying a mode, all other option
 
 For instance, using all commands:
 ```bash
-main.py informations.txt -m soft -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge 0_2050.txt -o my_custom_wordlist.txt
+fxwordlist.py informations.txt -m soft -p2 -s3 -d2 -a3 -fY -lY -bY -c1 -w wordlist.txt --merge 0_2050.txt -o my_custom_wordlist.txt
 ```
 
 __If no options are used, the default mode will be automatically activated (optimized mode).__
@@ -116,56 +116,56 @@ __If no options are used, the default mode will be automatically activated (opti
 
 >> `-m, --mode {soft;optimized;advanced;deep}`
 ```bash
-python main.py informations.txt -m advanced
+python fxwordlist.py informations.txt -m advanced
 ```
 ---------------------------------------------------------------------
 
 ### - _Number of maximum combinations for information permutations._
 >> `-p, --permutation [number_of_max_permutation]`
 ```bash
-python main.py informations.txt -p 3
+python fxwordlist.py informations.txt -p 3
 ```
 ---------------------------------------------------------------------
 
 ### - _Number of replacements with symbols, ex: @lice = Alic€, @lic€_
 >> `-s, --symbol [number_of_maximum_symbol]`
 ```bash
-python main.py informations.txt -s 3
+python fxwordlist.py informations.txt -s 3
 ```
 ---------------------------------------------------------------------
 
 ### - _Number of replacements with digit, ex: Alice = 4lice, Al1c3_
 >> `-d, --digit [number_of_maximum_digit]`
 ```bash
-python main.py informations.txt -d 3
+python fxwordlist.py informations.txt -d 3
 ```
 ---------------------------------------------------------------------
 
 ### - _Enable/Disable (Y/N) the function to uppercase the first letter only._
 >> `-f, --firstupper [Yes;No] `
 ```bash
-python main.py informations.txt -f Y
+python fxwordlist.py informations.txt -f Y
 ```
 ---------------------------------------------------------------------
 
 ### - _Enable/Disable (Y/N) the function to lowercase the entire password._
 >> `-l, --lowercase [Yes;No]`
 ```bash
-python main.py informations.txt -l Y
+python fxwordlist.py informations.txt -l Y
 ```
 ---------------------------------------------------------------------
 
 ### - _Enable/Disable (Y/N) the function to double the last letter if it is a vowel, ex: Mima = Mimaa._
 >> `-b, --double_letter [Yes;No]`
 ```bash
-python main.py informations.txt -b Y
+python fxwordlist.py informations.txt -b Y
 ```
 ---------------------------------------------------------------------
 
 ### - _Number of replacements with uppercase letters (testing all combinations)._
 >> `-a, --allupper [number_of_maximum_uppercase]`
 ```bash
-python main.py informations.txt -a 2
+python fxwordlist.py informations.txt -a 2
 ```
 ---------------------------------------------------------------------
 
@@ -176,42 +176,42 @@ python main.py informations.txt -a 2
 - `Level 3 includes ["1", "123", "0", ".", "!", "*", "00","2000"]`
 - `Level 0 simply deactivates the functionality.`
 ```bash
-python main.py informations.txt -c 1
+python fxwordlist.py informations.txt -c 1
 ```
 ---------------------------------------------------------------------
 
 ### - _Add one or more additional wordlists that we will add to our generation._
 >> `-w, --wordlist [wordlist_file,wordlist_file2,...]`
 ```bash
-python main.py informations.txt -w digit_passwords.txt
+python fxwordlist.py informations.txt -w digit_passwords.txt
 ```
 ---------------------------------------------------------------------
 
 ### - _Set all values to the same chosen value and enable all functions (except -w, --merge)._
 >> `--all_option [number_of_maximum_for_all_value]`
 ```bash
-python main.py informations.txt --all_option 2
+python fxwordlist.py informations.txt --all_option 2
 ```
 ---------------------------------------------------------------------
 
 ### - _The path for the output file wordlist, by default the output file will be located in the directory where you started the program._
 >> `-o, --output_file [output_file_path] | default='./fw_output.txt'`
 ```bash
-python main.py informations.txt -m soft -o my_file.txt
+python fxwordlist.py informations.txt -m soft -o my_file.txt
 ```
 ---------------------------------------------------------------------
 
 ### - _Merge one or more extra word lists with our generated content from user information, creating multiple combinations between files._
 >> `--merge [file_to_merge,file_to_merge2,...]`
 ```bash
-python main.py informations.txt --merge digit_passwords.txt
+python fxwordlist.py informations.txt --merge digit_passwords.txt
 ```
 ---------------------------------------------------------------------
 
 ### - _Merge various external wordlists while excluding the use of target information, creating multiple combinations between files._
 >> `--ext_merge [file1.txt,file2.txt,file3.txt...]  `
 ```bash
-python main.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
+python fxwordlist.py --ext_merge wordlist1.txt,0_2050.txt,digit_passwords.txt
 ```
 ---------------------------------------------------------------------
 
@@ -255,7 +255,7 @@ This wordlist is simply a list of numbers from 0 to 2050. It can potentially hel
     The program provides 2 wordlists which can be very useful for the merge (digit_passwords.txt & 0_2050.txt).
     
     ```bash
-    python main.py informations.txt --merge digit_passwords.txt,0_2050.txt
+    python fxwordlist.py informations.txt --merge digit_passwords.txt,0_2050.txt
     ```
     
   - If you use the "--merge" option or "-m deep", the number of passwords may increase significantly.
@@ -263,7 +263,7 @@ This wordlist is simply a list of numbers from 0 to 2050. It can potentially hel
     the value of `--all_upper`, etc.
     
     ```bash
-    python main.py information.txt --merge ./0_2050.txt -m optimized -c0 -b0 ...
+    python fxwordlist.py information.txt --merge ./0_2050.txt -m optimized -c0 -b0 ...
     ```
     
 ------------------------------------------------------------------------------------------------------
