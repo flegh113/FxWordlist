@@ -10,10 +10,10 @@ except:
 def read_information_from_file(file_path):
     try:
         with open(file_path, 'r') as file:
-            # Lire les informations depuis le fichier et les stocker dans une liste
+            # Lire les informations depuis le fichier et les stocker dans un set
             return {line.strip() for line in file}
     except FileNotFoundError:
-        print(f"Erreur : Le fichier '{file_path}' n'existe pas.")
+        print(f"Error : File '{file_path}' not found.")
         exit(1)
     except Exception as e:
         print(e)
